@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "scripts": {
-    "build": "tsc .\\lib\\index.ts -t es5",
+    "ts-build": "tsc",
+    "ts-genconfig": ".\\node_modules\\.bin\\tsc --init",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
